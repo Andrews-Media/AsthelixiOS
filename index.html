@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Asthelix Digital Media | Facebook Marketing & Content Management</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bk:#0c0c0d;--d:#141416;--m:#222228;--l:#a9b0b3;--w:#ececed;--a:#b886fc}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.65 Inter,sans-serif;background:var(--bk);color:var(--w);overflow-x:hidden;background-image:radial-gradient(600px 400px at 85% 5%,rgba(184,134,252,.18),transparent),radial-gradient(500px 400px at 5% 45%,rgba(199,146,234,.10),transparent);background-repeat:no-repeat}
+body:before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;background:radial-gradient(380px 300px at 30% 40%,rgba(184,134,252,.13),transparent),radial-gradient(320px 280px at 75% 70%,rgba(199,146,234,.1),transparent);animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(8%,-6%) scale(1.15)}}
+h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1080px;margin:auto;padding:0 22px}
+#pb{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--a),#f0e0ff);transform:scaleX(0);transform-origin:0;z-index:20}
+header{position:sticky;top:0;background:rgba(12,12,13,.92);backdrop-filter:blur(12px);border-bottom:2px solid var(--a);box-shadow:0 4px 24px rgba(184,134,252,.25);z-index:9}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2rem;text-decoration:none}
+.badge{width:34px;height:34px;border-radius:50%;background:#101016;border:1px solid var(--a);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--a);animation:pg 3s infinite alternate}
+@keyframes pg{from{box-shadow:0 0 10px rgba(184,134,252,.3)}to{box-shadow:0 0 22px rgba(184,134,252,.7)}}
+.logo span{color:var(--a)}
+nav a{margin-left:26px;text-decoration:none;color:var(--l);font-weight:500;position:relative;transition:color .2s}
+nav a:after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height:2px;background:var(--a);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav a:hover{color:var(--a)}
+nav a:hover:after{transform:scaleX(1)}
+#mb{display:none;background:none;border:1px solid var(--a);color:var(--a);font-size:1.3rem;border-radius:8px;padding:2px 10px;cursor:pointer}
+.btn{display:inline-block;position:relative;overflow:hidden;background:var(--a);color:#14101c;font-weight:700;font-family:'Space Grotesk',sans-serif;padding:14px 28px;border-radius:999px;text-decoration:none;border:0;font-size:1rem;cursor:pointer;box-shadow:0 0 24px rgba(184,134,252,.35);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 36px rgba(184,134,252,.6)}
+.btn:after{content:"";position:absolute;top:0;left:-60%;width:35%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:sh 4s infinite}
+@keyframes sh{0%,60%{left:-60%}100%{left:130%}}
+.hero{padding:96px 0 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero>div>*{opacity:0;animation:up .8s ease-out forwards}
+.hero>div>:nth-child(2){animation-delay:.15s}.hero>div>:nth-child(3){animation-delay:.3s}.hero>div>:nth-child(4){animation-delay:.45s}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.eyebrow{color:var(--a);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;margin-bottom:14px}
+h1{font-size:clamp(2.2rem,5.5vw,3.8rem);margin-bottom:20px}
+h1 em{font-style:normal;color:var(--a);background:linear-gradient(90deg,#b886fc,#f3e8ff,#b886fc);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:tx 5s linear infinite}
+@keyframes tx{to{background-position:-200% 0}}
+.hero p{color:var(--l);max-width:520px;margin-bottom:30px}
+.art{aspect-ratio:1;max-width:340px;width:100%;justify-self:center;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-14px)}}
+.art g{transform-origin:100px 100px}
+.o1{animation:rot 16s linear infinite}.o2{animation:rot 10s linear infinite reverse}.o3{animation:rot 7s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.core{transform-origin:100px 100px;animation:cp 2.5s ease-in-out infinite}
+@keyframes cp{50%{transform:scale(1.15)}}
+section{padding:72px 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:12px}
+.sub{color:var(--l);max-width:600px;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--d);border:1px solid var(--m);border-radius:16px;padding:26px;transition:border-color .25s,transform .25s,box-shadow .25s}
+.card:hover{border-color:var(--a);transform:translateY(-6px);box-shadow:0 10px 30px rgba(184,134,252,.22)}
+.card .ic{font-size:1.8rem;margin-bottom:12px;display:inline-block;transition:transform .4s}
+.card:hover .ic{transform:scale(1.25) rotate(-8deg)}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{color:var(--l);font-size:1rem}
+.alt{background:var(--d);border-block:1px solid var(--m)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.steps div{counter-increment:s;padding-top:14px;border-top:2px solid var(--a)}
+.steps div:before{content:"0" counter(s);font-family:'Space Grotesk';color:var(--a);font-weight:700;font-size:1.3rem}
+.steps h3{margin:6px 0;font-size:1.15rem}
+.steps p{color:var(--l)}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s ease-out,transform .7s ease-out}
+.rv.in{opacity:1;transform:none}
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:500;font-size:.95rem}
+input,textarea,select{width:100%;margin-top:6px;background:var(--bk);color:var(--w);border:1px solid #3a3a44;border-radius:10px;padding:12px 14px;font:inherit;transition:box-shadow .25s}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--a);border-color:var(--a);box-shadow:0 0 18px rgba(184,134,252,.35)}
+#ty{display:none;background:var(--d);border:1px solid var(--a);border-radius:14px;padding:24px;max-width:560px;animation:up .6s ease-out}
+footer{border-top:1px solid var(--m);padding:32px 0;color:var(--l);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(max-width:760px){
+.hero{grid-template-columns:1fr;padding:56px 0}
+.art{max-width:220px;order:-1;justify-self:start}
+#mb{display:block}
+nav{display:none;position:absolute;top:66px;left:0;right:0;background:#0c0c0d;border-bottom:2px solid var(--a);padding:10px 22px 18px}
+nav.open{display:block;animation:up .3s}
+nav a{display:block;margin:0;padding:12px 0}
+section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){*,:before,:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="pb"></div>
+<header>
+<div class="wrap nav">
+<a class="logo" href="#top"><div class="badge">A</div>Asthelix <span>Digital Media</span></a>
+<button id="mb" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav id="menu">
+<a href="#services">Services</a>
+<a href="#process">How we work</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<p class="eyebrow">Facebook Marketing & Content Management</p>
+<h1>Turn your Facebook Page into a <em>steady source</em> of customers.</h1>
+<p>We plan, create and manage your content and run your Facebook campaigns, so you can focus on running your business while your audience keeps growing.</p>
+<a class="btn" href="#contact">Get a free consultation</a>
+</div>
+<svg class="art" viewBox="0 0 200 200" role="img" aria-label="Abstract glowing orbit graphic">
+<defs><radialGradient id="g"><stop offset="0" stop-color="#b886fc" stop-opacity=".55"/><stop offset="1" stop-color="#b886fc" stop-opacity="0"/></radialGradient></defs>
+<circle cx="100" cy="100" r="96" fill="url(#g)" class="core"/>
+<g class="o1"><circle cx="100" cy="100" r="70" fill="none" stroke="#b886fc" stroke-opacity=".5" stroke-dasharray="4 6"/><circle cx="170" cy="100" r="7" fill="#b886fc"/></g>
+<g class="o2"><circle cx="100" cy="100" r="44" fill="none" stroke="#c792ea" stroke-opacity=".7"/><circle cx="100" cy="56" r="5" fill="#ececed"/></g>
+<g class="o3"><circle cx="100" cy="100" r="30" fill="none" stroke="#b886fc" stroke-opacity=".3"/><circle cx="130" cy="100" r="4" fill="#c792ea"/></g>
+<g class="core"><circle cx="100" cy="100" r="22" fill="#101016" stroke="#b886fc" stroke-width="2"/>
+<text x="100" y="108" text-anchor="middle" font-size="22" font-weight="700" fill="#b886fc" font-family="sans-serif">A</text></g>
+</svg>
+</div>
+
+<section id="services" class="alt">
+<div class="wrap">
+<h2>What we do</h2>
+<p class="sub">Three focused services that work together to build your presence on Facebook.</p>
+<div class="grid">
+<div class="card"><div class="ic">📣</div><h3>Facebook Ad Campaigns</h3><p>Targeted campaigns built around your goals, whether that is messages, leads, event sign-ups or sales, with ongoing testing and adjustment.</p></div>
+<div class="card"><div class="ic">🗓️</div><h3>Content Management</h3><p>A clear content calendar, scheduled posts, and community replies, so your Page stays active and consistent in your brand's voice.</p></div>
+<div class="card"><div class="ic">🎨</div><h3>Creative & Copywriting</h3><p>Graphics, short videos and captions designed to stop the scroll and make your offer easy to understand.</p></div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="wrap">
+<h2>How we work</h2>
+<p class="sub">Simple, transparent and built around your business.</p>
+<div class="steps">
+<div><h3>Discover</h3><p>We learn about your business, audience and goals, and review your current Page.</p></div>
+<div><h3>Plan</h3><p>You get a content calendar and campaign plan to approve before anything goes live.</p></div>
+<div><h3>Publish</h3><p>We create, schedule and manage posts and ads, and respond to your community.</p></div>
+<div><h3>Improve</h3><p>We review what works, share clear reports, and refine the plan each month.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="alt">
+<div class="wrap">
+<h2>Let's talk about your Page</h2>
+<p class="sub">Tell us a little about your business and we will get back to you. Prefer email? Write to [your email address].</p>
+<form id="f">
+<label>Your name<input required name="n" autocomplete="name"></label>
+<label>Email<input required type="email" name="e" autocomplete="email"></label>
+<label>What do you need?
+<select name="s"><option>Facebook ad campaigns</option><option>Content management</option><option>Creative & copywriting</option><option>Not sure yet</option></select></label>
+<label>About your business<textarea rows="4" name="m"></textarea></label>
+<button class="btn" type="submit">Send message</button>
+</form>
+<div id="ty" role="status"><h3>Thank you! 🎉</h3><p>Your message is ready. Once this site is connected to a form service, it will reach us directly. For now, please email [your email address].</p></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap"><span>© <span id="y"></span> Asthelix Digital Media</span><span>Facebook Marketing & Content Management</span></div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),mn=document.getElementById('menu'),pb=document.getElementById('pb');
+mb.onclick=function(){var o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',o)};
+mn.onclick=function(){mn.classList.remove('open')};
+document.getElementById('y').textContent=new Date().getFullYear();
+document.getElementById('f').onsubmit=function(e){e.preventDefault();this.style.display='none';document.getElementById('ty').style.display='block'};
+onscroll=function(){var h=document.documentElement;pb.style.transform='scaleX('+h.scrollTop/(h.scrollHeight-h.clientHeight||1)+')'};
+var els=document.querySelectorAll('section h2,.sub,.card,.steps div,form');
+function show(el){el.classList.add('in');setTimeout(function(){el.classList.remove('rv','in');el.style.transitionDelay=''},1400)}
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(r){r.forEach(function(x){if(x.isIntersecting){show(x.target);io.unobserve(x.target)}})},{threshold:.15});
+els.forEach(function(el){el.classList.add('rv');el.style.transitionDelay=Array.prototype.indexOf.call(el.parentNode.children,el)%4*120+'ms';io.observe(el)})}
+</script>
+</body>
+</html>
